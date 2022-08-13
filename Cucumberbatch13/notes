@@ -1,0 +1,66 @@
+Class 1 - Cucumber
+
+Cucumber - it is a tool that support BDD
+
+Given - pre condition
+When  - to perform actions
+And  - supporting tag
+
+Then - expected result/outcome
+
+US - 12345 - Search employee by name
+
+Given user is able to open chrome browser
+When user enters username and password
+And user clicks on login button
+Then user navigated to dashboard page
+When user is clicks on PIM option
+And user on employee list option
+When user enters name in the employee name field
+And user clicks on search button
+Then user is able to see the employee
+
+
+US - 2345 -  Search employee by id
+Given user is able to open chrome browser
+When user enters username and password
+And user clicks on login button
+Then user navigated to dashboard page
+When user is clicks on PIM option
+And user on employee list option
+When user enters id in the employee name field
+And user clicks on search button
+Then user is able to see the employee
+
+-- Cucumber encourages code reusability concept
+
+main - the code we write to develop the application, we write under main
+
+develop the application
+to test the application
+
+test - the code we write to test the application, we write under test
+
+2 things we have in project
+
+-coding  - Java
+-non - Java - properties files excel etc.
+
+coding will be at one place
+none java will be at another place
+
+-- to write gherkin scenerios, we use feature files
+
+Given user is navigated to HRMS application
+When user name enters admin username and password
+And clicks on login button
+Then admin user is successfully logged in
+
+scenerio -  every scenerio is considered as one test case
+
+why we dont need system.setproperty()- "driver/chromedriver.exe"
+if the path is incorrect to webdriver - it will fail, path is limited to one machine
+many times it is not compatible with browser
+
+
+
